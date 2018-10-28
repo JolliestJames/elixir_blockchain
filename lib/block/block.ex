@@ -18,4 +18,13 @@ defmodule Block do
       timestamp: NaiveDateTime.utc_now,
     }
   end
+
+  @doc "Validate block"
+  def valid?(%Block{} = block) do
+    Crypto.hash(block) == block.hash
+  end
+
+  def valid?(%Block{} = current, %Block{} = previous) do
+    (current.previous == previous.current) && valid?(current)
+  end
 end
