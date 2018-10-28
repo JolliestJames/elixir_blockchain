@@ -1,6 +1,6 @@
 # ElixirBlockchain
 
-**TODO: Add description**
+A learning experiment in Elixir lang and blockchain technology concepts.
 
 ## Installation
 
