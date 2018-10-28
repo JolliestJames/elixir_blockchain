@@ -24,3 +24,4 @@ elixir_blockchain-*.tar
 
 *.beam
 /config/*.secret.exs
+/.elixir_ls/
